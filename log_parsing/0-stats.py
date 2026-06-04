@@ -30,7 +30,8 @@ if __name__ == "__main__":
                 total_size += file_size
 
                 if status_code in valid_codes:
-                    status_codes[status_code] = status_codes.get(status_code, 0) + 1
+                    status_codes[status_code] = (
+                        status_codes.get(status_code, 0) + 1)
 
             except (IndexError, ValueError):
                 pass
